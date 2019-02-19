@@ -1,6 +1,7 @@
 p#title {
   text-align: center;
-  font-size: 34px;
+  margin: 10px auto;
+  font-size: 48px;
   cursor: default;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
