@@ -9,7 +9,3 @@ p#title {
   -moz-user-select: none;
   -ms-user-select: none;
 }
-
-p#aboutDescription {
-  text-align: center;
-}

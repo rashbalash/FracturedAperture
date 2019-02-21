@@ -1,10 +1,20 @@
+#mainWrapper {
+    width: 50%;
+    margin: auto;
+}
+
 #profileImage {
     display: block;
     margin: 20px auto;
-    max-width: 30%;
-    max-height: 30%;
+    max-width: 60%;
     border-radius: 50%;
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
+}
+
+p#aboutDescription {
+    text-align: center;
+    margin: 10px auto;
+    width: 60%;
 }
