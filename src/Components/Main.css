@@ -1,0 +1,70 @@
+#mainWrapper {
+    max-width: 35%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+    #mainWrapper {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #mainWrapper {
+        max-width: 75%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #mainWrapper {
+        max-width: 90%;
+    }
+}
+
+#profileImage {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+p#aboutDescription {
+    text-align: center;
+    margin: 10px auto;
+}
+
+p.sectionName {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+div.sectionItem {
+    width: 90%;
+    margin-left: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+div.itemInformation {
+    
+}
+
+img.itemImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 9px;
+}
+
+p.itemTitle {
+    font-size: 20px;
+    margin: 0 14px;
+}
+
+p.itemDetails {
+    margin: 0 14px;
+}

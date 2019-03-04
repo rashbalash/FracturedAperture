@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
-import Main from './Main';
+import Main from './Components/Main';
 import './App.css';
 
 class App extends Component {
+
+  getYear = () => {
+    var date = new Date().getFullYear(); 
+    return <p id="copyright">Rashad Balashov &copy; { date }</p>
+  }
+
   render() {
     return (
       <div className="App">
@@ -11,12 +17,16 @@ class App extends Component {
         </div>
 
         <div id="navigation">
-
+          
         </div>
 
 
         <div id ="mainPage">
           <Main />
+        </div>
+
+        <div id="footer">
+          <footer>{ this.getYear() }</footer>
         </div>
 
       </div>
