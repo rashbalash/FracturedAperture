@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import Profile from './profile/IMG_2344.jpg';
-import Umbc from './mainImages/umbc.png';
-import Ey from './mainImages/ey.png';
-import Loc from './mainImages/loc.png';
-import { ReactComponent as Sw } from './mainImages/sw.svg';
-import './mainImages/swAnimate.css';
+import Umbc from './sectionImages/umbc.png';
+import Ey from './sectionImages/ey.png';
+import Loc from './sectionImages/loc.png';
+import { ReactComponent as Sw } from './sectionImages/sw.svg';
+import { ReactComponent as Gmail } from './social_icons/gmail.svg';
+import { ReactComponent as Instagram } from './social_icons/instagram.svg';
+import { ReactComponent as Linkedin } from './social_icons/linkedin.svg';
+import { ReactComponent as Youtube } from './social_icons/youtube.svg';
 import './Main.css';
 
 class Main extends Component {
@@ -51,7 +54,6 @@ class Main extends Component {
 
                 <p className="sectionName">Projects</p>
                     <div className="sectionItem">
-                        {/* <svg src={ Sw } alt="SimpliWeather" className="itemImage" /> */}
                         <Sw />
                         <div className="itemInformation">
                             <p className="itemTitle">SimpliWeather</p>
@@ -61,6 +63,12 @@ class Main extends Component {
                         </div>
                     </div>
                 <p className="sectionName">Contact Me</p>
+                    <div id="socialIconWrapper">
+                        <a className="socialIconA" target="_blank" rel="noopener noreferrer" href="mailto:Rashad.Balashov@gmail.com"><Gmail /></a>
+                        <a className="socialIconA" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/user/Rmab95/"><Youtube /></a>
+                        <a className="socialIconA" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/rashadbalashov/"><Linkedin /></a>
+                        <a className="socialIconA" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/swamiboyrash/"><Instagram /></a>
+                    </div>
 
             </div>
         )

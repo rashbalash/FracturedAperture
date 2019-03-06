@@ -1,35 +1,40 @@
+// React Imports
 import React, { Component } from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
+
+// Page Imports
+// import Videos from './Components/Main';
+// import Photos from './Components/Main';
 import Main from './Components/Main';
+// import Projects from './Components/Main';
+// import Blog from './Components/Main';
+
+// Constant Imports
+import Navigation from './Components/Navigation';
+import Footer from './Components/Footer';
 import './App.css';
 
 class App extends Component {
 
-  getYear = () => {
-    var date = new Date().getFullYear(); 
-    return <p id="copyright">Rashad Balashov &copy; { date }</p>
-  }
-
   render() {
     return (
-      <div className="App">
-        <div id="mainTitle">
-          <p id="title">Fractured Aperture</p>
+      <BrowserRouter>
+        <div className="App">
+          <div id="mainTitle">
+            <p id="title">Fractured Aperture</p>
+          </div>
+
+          <Navigation />
+          {/* <Route path="/Videos" component={Videos} /> */}
+          {/* <Route path="/Photos" component={Photos} /> */}
+          <Route exact path="/" component={Main} />
+          {/* <Route path="/Projects" component={Projects} /> */}
+          {/* <Route path="/Blog" component={Blog} /> */}
+
+          <Footer />
+
         </div>
-
-        <div id="navigation">
-          
-        </div>
-
-
-        <div id ="mainPage">
-          <Main />
-        </div>
-
-        <div id="footer">
-          <footer>{ this.getYear() }</footer>
-        </div>
-
-      </div>
+      </BrowserRouter>
     );
   }
 }

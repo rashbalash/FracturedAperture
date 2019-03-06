@@ -1,0 +1,15 @@
+div#navBar {
+    width: 28%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+a.navLink {
+
+}
