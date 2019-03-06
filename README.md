@@ -1,3 +1,8 @@
+March 6th, 2019:
+- Added Social Media Icons
+- Added Router
+
+--------------------------------------------------------
 March 4th, 2019:
 - Added Education, Experience, Projects, and Contact Me Sections
 - Added UMBC to Education
