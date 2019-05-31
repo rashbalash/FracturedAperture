@@ -1,56 +1,36 @@
 #mainWrapper {
-    max-width: 35%;
+    width: 700px;
+    max-width: 90%;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-@media screen and (max-width: 1000px) {
-    #mainWrapper {
-        max-width: 50%;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    #mainWrapper {
-        max-width: 75%;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    #mainWrapper {
-        max-width: 90%;
-    }
-}
-
 #profileImage {
-    display: block;
     margin: 20px auto;
     max-width: 100%;
+    width: 700px;
     border-radius: 50%;
 }
 
 p#aboutDescription {
     text-align: center;
     margin: 10px auto;
+    font-size: 18px;
 }
 
 p.sectionName {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 26px;
 }
 
 div.sectionItem {
     width: 90%;
-    margin-left: 2%;
+    margin-left: 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-}
-
-div.itemInformation {
-    
 }
 
 img.itemImage {
@@ -65,23 +45,10 @@ p.itemTitle {
     margin: 0 14px;
 }
 
+div#itemInformation {
+    width: 10%;
+}
+
 p.itemDetails {
     margin: 0 14px;
-}
-
-a.socialIconA {
-    margin: auto 5px;
-    -webkit-transition: .3s ease ;
-    -moz-transition: .3s ease;
-    -o-transition: .3s ease;
-    transition: .3s ease;
-}
-
-a.socialIconA:hover {
-    opacity: 0.5;
-}
-
-div#socialIconWrapper {
-    text-align: center;
-    margin-bottom: 5px;
 }

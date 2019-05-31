@@ -9,6 +9,12 @@ import Main from './Components/Main';
 // import Projects from './Components/Main';
 // import Blog from './Components/Main';
 
+// Social Media Icons
+import { ReactComponent as Gmail } from './social_icons/gmail.svg';
+import { ReactComponent as Instagram } from './social_icons/instagram.svg';
+import { ReactComponent as Linkedin } from './social_icons/linkedin.svg';
+import { ReactComponent as Youtube } from './social_icons/youtube.svg';
+
 // Constant Imports
 import Navigation from './Components/Navigation';
 import Footer from './Components/Footer';
@@ -18,6 +24,8 @@ class App extends Component {
 
   render() {
     return (
+      <div>
+      <br />
       <BrowserRouter>
         <div className="App">
           <div id="mainTitle">
@@ -31,10 +39,16 @@ class App extends Component {
           {/* <Route path="/Projects" component={Projects} /> */}
           {/* <Route path="/Blog" component={Blog} /> */}
 
-          <Footer />
-
         </div>
       </BrowserRouter>
+        <div id="socialIconWrapper">
+            <a className="socialIconA" target="_blank" rel="noopener noreferrer" href="mailto:Rashad.Balashov@gmail.com"><Gmail /></a>
+            <a className="socialIconA" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/user/Rmab95/"><Youtube /></a>
+            <a className="socialIconA" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/rashadbalashov/"><Linkedin /></a>
+            <a className="socialIconA" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/swamiboyrash/"><Instagram /></a>
+        </div>
+        <Footer />
+      </div>
     );
   }
 }
