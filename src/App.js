@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 // Page Imports
-// import Videos from './Components/Main';
-// import Photos from './Components/Main';
+import Videos from './Components/Videos';
+import Photos from './Components/Photos';
 import Main from './Components/Main';
-// import Projects from './Components/Main';
-// import Blog from './Components/Main';
+import Projects from './Components/Projects';
+import Blog from './Components/Blog';
 
 // Social Media Icons
 import { ReactComponent as Gmail } from './social_icons/gmail.svg';
@@ -33,11 +33,11 @@ class App extends Component {
           </div>
 
           <Navigation />
-          {/* <Route path="/Videos" component={Videos} /> */}
-          {/* <Route path="/Photos" component={Photos} /> */}
+          <Route path="/Videos" component={Videos} />
+          <Route path="/Photos" component={Photos} />
           <Route exact path="/" component={Main} />
-          {/* <Route path="/Projects" component={Projects} /> */}
-          {/* <Route path="/Blog" component={Blog} /> */}
+          <Route path="/Projects" component={Projects} />
+          <Route path="/Blog" component={Blog} />
 
         </div>
       </BrowserRouter>

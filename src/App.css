@@ -10,6 +10,18 @@ p#title {
   -ms-user-select: none;
 }
 
+@media all and (max-width: 415px) {
+  p#title {
+    font-size: 40px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  p#title {
+    font-size: 36px;
+  }
+}
+
 p#copyright {
   font-size: 14px;
   text-align: center;

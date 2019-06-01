@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './Navigation.css';
 
+// Logo
+import { ReactComponent as FALogo } from './Logo/FALogo.svg';
+
 class Navigation extends Component {
 
     displayNav = () => {
@@ -8,7 +11,7 @@ class Navigation extends Component {
             <div id="navBar">
                 <a className="navLink" href="/Videos">Videos</a>
                 <a className="navLink" href="/Photos">Photos</a>
-                <a className="navLink" href="/">Home</a>
+                <a className="navLink" href="/"><FALogo /></a>
                 <a className="navLink" href="/Projects">Projects</a>
                 <a className="navLink" href="/Blog">Blog</a>
             </div>

@@ -13,7 +13,7 @@ class Main extends Component {
             <div id="mainWrapper">
                 
                 <div id="imageWrapper">
-                    <img src={ Profile } alt="Profile" id="profileImage" />
+                    <img src={ Profile } alt="Profile Photos: Credits to Johnlemuel Casilag" id="profileImage" />
                 </div>
 
                 <div id="aboutWrapper">
@@ -52,7 +52,7 @@ class Main extends Component {
                     <div className="sectionItem">
                         <Sw />
                         <div className="itemInformation">
-                            <p className="itemTitle"><a href="https://simpliweather.com" target="_blank" rel="noopener noreferrer">SimpliWeather</a></p>
+                            <p className="itemTitle"><a className="projectLink" href="https://simpliweather.com" target="_blank" rel="noopener noreferrer">SimpliWeather</a></p>
                             <p className="itemDetails">Built using ReactJS and OpenWeatherMap's API<br />A clean, responsive web app for checking the weather</p>
                         </div>
                     </div>
