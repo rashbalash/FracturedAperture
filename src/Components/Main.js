@@ -18,7 +18,7 @@ class Main extends Component {
 
                 <div id="aboutWrapper">
                     <p id="aboutDescription">Hello!<br />My name is Rashad Balashov.<br />I am a Computer Science and 
-                    Financial Economics major at the University of Maryland, Baltimore County. I built this website 
+                    Financial Economics double major at the University of Maryland, Baltimore County. I built this website 
                     as a space dedicated to sharing my projects, photography, and more. I hope you enjoy!</p>
                 </div>
                 
