@@ -25,7 +25,6 @@ class App extends Component {
   render() {
     return (
       <div>
-      <br />
       <BrowserRouter>
         <div className="App">
           <div id="mainTitle">

@@ -35,8 +35,8 @@ class Main extends Component {
                     <div className="sectionItem">
                         <img src={ Ey } alt="Ernst & Young" className="itemImage" />
                         <div className="itemInformation">
-                            <p className="itemTitle">Ernst & Young - Government Public Sector</p>
-                            <p className="itemDetails">GPS Intern<br />June 2019 - August 2019</p>
+                            <p className="itemTitle">Ernst & Young</p>
+                            <p className="itemDetails">IT Advisory Intern<br />June 2019 - August 2019</p>
                         </div>
                     </div>
                     <br />

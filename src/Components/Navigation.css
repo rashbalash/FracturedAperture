@@ -1,11 +1,9 @@
 div#navBar {
-    width: 28%;
-    margin: 20px auto 10px auto;
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
 a.navLink {
