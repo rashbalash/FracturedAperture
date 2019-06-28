@@ -1,3 +1,8 @@
+June 27th, 2019:
+- Updated Favicon
+- Fixed Cross Browser Compatibility with Navigation
+
+--------------------------------------------------------
 March 6th, 2019:
 - Added Social Media Icons
 - Added Router
