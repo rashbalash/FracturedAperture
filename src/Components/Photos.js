@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { db } from "../Config/firebaseConfig";
-import Lightbox from "../Lightbox/Lightbox";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 
@@ -10,7 +9,8 @@ class Photos extends Component {
     
     state = {
         photos: [],
-        activePhotoIndex: null
+        activePhotoIndex: null,
+        isLightboxOpen: false
     };
 
     componentDidMount = () => {
@@ -21,7 +21,7 @@ class Photos extends Component {
         return db.collection("PhotoURLS").get().then((snapshot) => {
             const photos = [];
             snapshot.forEach(photo => {
-                photos.push({src: photo.data().url, width: 5.5, height: 3.4});
+                photos.push({src: photo.data().url, width: photo.data().width, height: photo.data().height});
             });
             this.setState({photos});
         });
@@ -29,29 +29,34 @@ class Photos extends Component {
 
     displayImage = (url) => {        
         return (
-            <div className="gallery_container">
+            <div className="image_container">
                 <img className="gallery_image" src={ url } alt="altText" key={ url } />
             </div>
         )
     }
 
+    toggleModal = (e, photoArg) => {
+        this.setState(state => ({ isLightboxOpen: !this.state.isLightboxOpen, activePhotoIndex: photoArg ? photoArg.index : 0 }));
+    }
+
     render() {
         return (
-            <div>
-                {/* {
-                    this.state.photos.map(photo => 
-                        this.displayImage(photo)
-                    )
-                } */}
+            <div id="gallery_container">
+                <br />
 
-                <Gallery photos={this.state.photos} />
+                <Gallery photos={ this.state.photos } onClick={ this.toggleModal } />
 
-                {
-                    this.state.activePhotoIndex !== null && <Lightbox photos={this.state.photos} activePhotoIndex={this.state.activePhotoIndex} />
-                }
+                <ModalGateway>
+                    { this.state.isLightboxOpen ? (
+                        <Modal onClose={ this.toggleModal }>
+                            <Carousel 
+                                currentIndex={ this.state.activePhotoIndex } 
+                                views={ this.state.photos } />
+                        </Modal>
+                    ) : null }
+                </ModalGateway>
                 
-                <button onClick={() => this.setState({ activePhotoIndex: 1 })}> label </button>
-
+                <br />
             </div>
         )
     }
