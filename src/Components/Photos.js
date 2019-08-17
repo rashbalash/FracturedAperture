@@ -27,14 +27,6 @@ class Photos extends Component {
         });
     }
 
-    displayImage = (url) => {        
-        return (
-            <div className="image_container">
-                <img className="gallery_image" src={ url } alt="altText" key={ url } />
-            </div>
-        )
-    }
-
     toggleModal = (e, photoArg) => {
         this.setState(state => ({ isLightboxOpen: !this.state.isLightboxOpen, activePhotoIndex: photoArg ? photoArg.index : 0 }));
     }

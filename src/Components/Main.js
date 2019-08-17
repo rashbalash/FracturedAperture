@@ -1,8 +1,4 @@
 import React, { Component } from 'react';
-import Profile from './profile/IMG_2344.jpg';
-import Umbc from './sectionImages/umbc.png';
-import Ey from './sectionImages/ey.png';
-import Loc from './sectionImages/loc.png';
 import './Main.css';
 import { ReactComponent as Sw } from './sectionImages/sw.svg';
 
@@ -13,7 +9,7 @@ class Main extends Component {
             <div id="mainWrapper">
                 
                 <div id="imageWrapper">
-                    <img src={ Profile } alt="Profile Photos: Credits to Johnlemuel Casilag" id="profileImage" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/fractured-aperture.appspot.com/o/Profile_Photo%2FIMG_2344.jpg?alt=media&token=440b713e-929e-46d3-bf2f-52d7cabc4a4a" alt="Profile Photos: Credits to Johnlemuel Casilag" id="profileImage" />
                 </div>
 
                 <div id="aboutWrapper">
@@ -24,7 +20,7 @@ class Main extends Component {
                 
                 <p className="sectionName">Education</p>
                     <div className="sectionItem">
-                        <img src={ Umbc } alt="UMBC" className="itemImage" />
+                        <img src="https://firebasestorage.googleapis.com/v0/b/fractured-aperture.appspot.com/o/Section_Icons%2Fumbc.png?alt=media&token=9c857cf2-3453-4408-9532-af386c8077f5" alt="UMBC" className="itemImage" />
                         <div className="itemInformation">                        
                             <p className="itemTitle">University of Maryland, Baltimore County</p>
                             <p className="itemDetails">Computer Science, Financial Economics<br />2016-2020</p>
@@ -33,7 +29,7 @@ class Main extends Component {
 
                 <p className="sectionName">Experience</p>
                     <div className="sectionItem">
-                        <img src={ Ey } alt="Ernst & Young" className="itemImage" />
+                        <img src="https://firebasestorage.googleapis.com/v0/b/fractured-aperture.appspot.com/o/Section_Icons%2Fey.png?alt=media&token=7324bd92-36ea-4970-81f4-14c29b834fd9" alt="Ernst & Young" className="itemImage" />
                         <div className="itemInformation">
                             <p className="itemTitle">Ernst & Young</p>
                             <p className="itemDetails">IT Advisory Intern<br />June 2019 - August 2019</p>
@@ -41,7 +37,7 @@ class Main extends Component {
                     </div>
                     <br />
                     <div className="sectionItem">
-                        <img src={ Loc } alt="Library of Congress" className="itemImage" />
+                        <img src="https://firebasestorage.googleapis.com/v0/b/fractured-aperture.appspot.com/o/Section_Icons%2Floc.png?alt=media&token=898d9598-5097-44c8-bc18-afb1036c2f6a" alt="Library of Congress" className="itemImage" />
                         <div className="itemInformation">
                             <p className="itemTitle">Library of Congress</p>
                             <p className="itemDetails">Volunteer Data Entry Analyst<br />June 2017 - August 2018</p>
