@@ -1,3 +1,8 @@
+August 17th, 2019:
+- Implemented a lightbox for the Photos Page
+- Using Firebase's Cloud Firestore and Storage to automate uploading images. This allows me to remove redeploying the webpage each time I want to add images 
+--------------------------------------------------------
+
 June 27th, 2019:
 - Updated Favicon
 - Fixed Cross Browser Compatibility with Navigation
