@@ -19,6 +19,7 @@ import { ReactComponent as Youtube } from './social_icons/youtube.svg';
 import Navigation from './Components/Navigation';
 import Footer from './Components/Footer';
 import './App.css';
+import Post, { blogPostType, projectPostType } from './Components/Post';
 
 class App extends Component {
 
@@ -35,8 +36,11 @@ class App extends Component {
           <Route path="/Videos" component={Videos} />
           <Route path="/Photos" component={Photos} />
           <Route exact path="/" component={Main} />
-          <Route path="/Projects" component={Projects} />
-          <Route path="/Blog" component={Blog} />
+          <Route exact path="/Projects" component={Projects} />
+          <Route exact path="/Blog" component={Blog} />
+
+          <Route path="/Projects/:id" component={ ({ match }) => <Post postType={ projectPostType } id={ match.params.id } />} />
+          <Route path="/Blog/:id" component={ ({ match }) => <Post postType={ blogPostType } id={ match.params.id } /> } />
 
         </div>
       </BrowserRouter>

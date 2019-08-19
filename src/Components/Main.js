@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './Main.css';
+import './sectionImages/swAnimate.css';
 import { ReactComponent as Sw } from './sectionImages/sw.svg';
+
 
 class Main extends Component {
 

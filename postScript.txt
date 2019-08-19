@@ -1,0 +1,6 @@
+
+const convertToPost = (markdownPost) => {
+
+    return markdownPost.replace(/\n/g, '$%^');
+
+}

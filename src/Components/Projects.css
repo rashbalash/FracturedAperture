@@ -1,3 +1,52 @@
 h1 {
     text-align: center;
 }
+
+a.projectPostLink {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+    -webkit-transition: .2s ease ;
+    -moz-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+    text-align: center;
+}
+
+a.projectPostLink:hover {
+    color: red;
+}
+
+div#projectPostContainer {
+    max-width: 80%;
+    margin: auto;
+}
+
+div.postLinkContainer {
+    width: 700px;
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+img.projectPostImage {
+    flex: 0 0 auto;
+    width: 175px;
+    height: 175px;
+    margin-top: 25px;
+}
+
+p.projectPostShortDescription {
+    margin: 0 14px;
+}
+
+p.projectPostTitle {
+    margin: 20px 14px 5px 14px;
+}
+
+div.projectPostDetails {
+    flex: 1 1 0;
+}

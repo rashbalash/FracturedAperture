@@ -1,0 +1,14 @@
+.iframeContainer {
+    line-height: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.videoIframe {
+    height: 80vh;
+    width: 70vw;
+}
