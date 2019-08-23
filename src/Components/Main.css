@@ -10,8 +10,9 @@
 #profileImage {
     margin: 20px auto;
     max-width: 100%;
-    width: 700px;
+    width: 600px;
     border-radius: 50%;
+    justify-content: center;
 }
 
 p#aboutDescription {
@@ -23,6 +24,7 @@ p#aboutDescription {
 p.sectionName {
     font-weight: bold;
     font-size: 26px;
+    margin-bottom: 15px;
 }
 
 div.sectionItem {
@@ -30,6 +32,10 @@ div.sectionItem {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+}
+
+div#imageWrapper {
+    margin: auto;
 }
 
 img.itemImage {

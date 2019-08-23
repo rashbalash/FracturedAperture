@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Main.css';
 import './sectionImages/swAnimate.css';
 import { ReactComponent as Sw } from './sectionImages/sw.svg';
+import { ReactComponent as FALogo } from './Logo/FALogo.svg';
 
 
 class Main extends Component {
@@ -15,7 +16,7 @@ class Main extends Component {
                 </div>
 
                 <div id="aboutWrapper">
-                    <p id="aboutDescription">Hello!<br />My name is Rashad Balashov.<br />I am a Computer Science and 
+                    <p id="aboutDescription">Hello! My name is Rashad Balashov.<br />I am a Computer Science and 
                     Financial Economics double major at the University of Maryland, Baltimore County. I built this website 
                     as a space dedicated to sharing my projects, photography, and more. I hope you enjoy!</p>
                 </div>
@@ -54,7 +55,14 @@ class Main extends Component {
                             <p className="itemDetails">Built using ReactJS and OpenWeatherMap's API<br />A clean, responsive web app for checking the weather</p>
                         </div>
                     </div>
-
+                    <br />
+                    <div className="sectionItem">
+                        <FALogo />
+                        <div className="itemInformation">
+                            <p className="itemTitle">FracturedAperture</p>
+                            <p className="itemDetails">Built using ReactJS<br />A website to share photos, videos, projects, and my thoughts</p>
+                        </div>
+                    </div>
                 <p className="sectionName">Contact Me</p>
 
 
