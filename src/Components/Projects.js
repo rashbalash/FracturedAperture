@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import ReactMarkdown from 'react-markdown';
 import { db } from '../Config/firebaseConfig';
 
 import './Projects.css';
@@ -27,6 +26,7 @@ class Projects extends Component {
     render() {
         return (
             <div id="projectPostContainer">
+                <br />
                 {this.state.posts.map( (post) => (
                     <div className="postLinkContainer">
                         <img className="projectPostImage" src={ post.titlePhoto } alt="projectImage" />

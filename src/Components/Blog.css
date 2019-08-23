@@ -1,0 +1,56 @@
+h1 {
+    text-align: center;
+}
+
+a.blogPostLink {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 32px;
+    -webkit-transition: .2s ease ;
+    -moz-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+    text-align: center;
+}
+
+a.blogPostLink:hover {
+    color: red;
+}
+
+div#blogPostContainer {
+    max-width: 95%;
+    margin: auto;
+}
+
+div.postLinkContainer {
+    width: 700px;
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+img.blogPostImage {
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    width: 300px;
+    max-width: 90%;
+    height: auto;
+    margin-top: 25px;
+    margin: auto;
+}
+
+p.blogPostShortDescription {
+    margin: 0 14px;
+}
+
+p.blogPostTitle {
+    margin: 20px 14px 5px 14px;
+}
+
+div.blogPostDetails {
+    flex: 1 1 0;
+    font-size: 18px;
+}

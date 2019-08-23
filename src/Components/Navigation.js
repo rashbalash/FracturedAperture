@@ -13,7 +13,7 @@ class Navigation extends Component {
                 <a className="navLink" href="/Photos">Photos</a>
                 <a className="navLink" href="/"><FALogo /></a>
                 <a className="navLink" href="/Projects">Projects</a>
-                <a className="navLink" href="/Blog">Blog</a>
+                <a className="navLink" href="/Blogs">Blog</a>
             </div>
         )
     }

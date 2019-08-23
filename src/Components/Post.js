@@ -32,17 +32,16 @@ class Post extends Component {
             return (null);
         } 
 
-        const {title, titlePicture, content, publishDate} = this.state.post;
+        const {title, titlePhoto, content, publishDate} = this.state.post;
 
         const date = new Date(0);
         date.setUTCSeconds(publishDate.seconds);
 
-
         return (
             <div className="postContainer">
-                <h2>{ title }</h2>
-                <p>{ date.toDateString() }</p>
-                <img src={titlePicture} alt="title" />
+                <p className="postTitle">{ title }</p>
+                <p className="postPublishDate">{ date.toDateString() }</p>
+                <img className="postPicture" src={titlePhoto} alt="title" />
                 <ReactMarkdown source={content} />
 
             </div>

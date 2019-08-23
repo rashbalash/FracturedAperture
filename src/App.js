@@ -37,10 +37,10 @@ class App extends Component {
           <Route path="/Photos" component={Photos} />
           <Route exact path="/" component={Main} />
           <Route exact path="/Projects" component={Projects} />
-          <Route exact path="/Blog" component={Blog} />
+          <Route exact path="/Blogs" component={Blog} />
 
           <Route path="/Projects/:id" component={ ({ match }) => <Post postType={ projectPostType } id={ match.params.id } />} />
-          <Route path="/Blog/:id" component={ ({ match }) => <Post postType={ blogPostType } id={ match.params.id } /> } />
+          <Route path="/Blogs/:id" component={ ({ match }) => <Post postType={ blogPostType } id={ match.params.id } /> } />
 
         </div>
       </BrowserRouter>
