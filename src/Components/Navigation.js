@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './Navigation.css';
 
 // Logo
@@ -9,11 +10,11 @@ class Navigation extends Component {
     displayNav = () => {
         return (
             <div id="navBar">
-                <a className="navLink" href="/Videos">Videos</a>
-                <a className="navLink" href="/Photos">Photos</a>
-                <a className="navLink" href="/"><FALogo /></a>
-                <a className="navLink" href="/Projects">Projects</a>
-                <a className="navLink" href="/Blogs">Blog</a>
+                <Link to="/Videos" className="navLink">Videos</Link>
+                <Link to="/Photos" className="navLink">Photos</Link>
+                <Link to="/" className="navLink"><FALogo /></Link>
+                <Link to="/Projects" className="navLink">Projects</Link>
+                <Link to="/Blogs" className="navLink">Blog</Link>
             </div>
         )
     }

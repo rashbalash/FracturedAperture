@@ -57,7 +57,7 @@ class Main extends Component {
                     </div>
                     <br />
                     <div className="sectionItem">
-                        <FALogo />
+                        <FALogo className="projectImage"/>
                         <div className="itemInformation">
                             <p className="itemTitle">FracturedAperture</p>
                             <p className="itemDetails">Built using ReactJS<br />A website to share photos, videos, projects, and my thoughts</p>

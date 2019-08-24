@@ -72,3 +72,7 @@ a.projectLink {
 a.projectLink:hover {
     color: red;
 }
+
+.projectImage {
+    margin-top: 9px;
+}
