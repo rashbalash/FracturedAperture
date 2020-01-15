@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Navigation.css';
 
 // Logo
-import { ReactComponent as FALogo } from './Logo/FALogo.svg';
+import { ReactComponent as FALogo } from '../Logo/FALogo.svg';
 
 class Navigation extends Component {
 

@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
-import { db } from '../Config/firebaseConfig';
+import { db } from '../../Config/firebaseConfig';
 
-import './Blog.css';
+import './Projects.css';
 
-class Blog extends Component {
-    
+class Projects extends Component {
+
     state = {
         posts: [],
     }
 
     componentDidMount = () => {
-        this.retrieveBlog();
+        this.retrieveProject();
     }
 
-    retrieveBlog = () => {
-        return db.collection("BlogPosts").get().then((snapshot) => {
+    retrieveProject = () => {
+        return db.collection("ProjectPosts").get().then((snapshot) => {
             const posts = [];
             snapshot.forEach(post => {
                 posts.push({...post.data(), id: post.id });
@@ -25,16 +25,16 @@ class Blog extends Component {
 
     render() {
         return (
-            <div id="blogPostContainer">
+            <div id="projectPostContainer">
                 <br />
                 {this.state.posts.map( (post) => (
                     <div className="postLinkContainer">
-                        <img className="blogPostImage" src={ post.titlePhoto } alt="blogImage" />
-                        <div className="blogPostDetails">
-                            <p className="blogPostTitle">
-                                <a className="blogPostLink" href={ `/Blogs/${post.id}` }>{ post.title }</a>
+                        <img className="projectPostImage" src={ post.titlePhoto } alt="projectImage" />
+                        <div className="projectPostDetails">
+                            <p className="projectPostTitle">
+                                <a className="projectPostLink" href={ `/Projects/${post.id}` }>{ post.title }</a>
                             </p>
-                            <p className="blogPostShortDescription">
+                            <p className="projectPostShortDescription">
                                 { post.shortDescription }
                             </p>
                         </div>
@@ -46,4 +46,4 @@ class Blog extends Component {
     }
 }
 
-export default Blog;
+export default Projects;

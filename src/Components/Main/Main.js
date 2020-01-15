@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import './Main.css';
-import './sectionImages/swAnimate.css';
-import { ReactComponent as Sw } from './sectionImages/sw.svg';
-import { ReactComponent as FALogo } from './Logo/FALogo.svg';
-
+import '../sectionImages/swAnimate.css';
+import { ReactComponent as Sw } from '../sectionImages/sw.svg';
+import { ReactComponent as FALogo } from '../Logo/FALogo.svg';
 
 class Main extends Component {
 

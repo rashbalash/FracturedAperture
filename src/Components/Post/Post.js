@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { db } from "../Config/firebaseConfig";
+import { db } from "../../Config/firebaseConfig";
 import ReactMarkdown from "react-markdown";
 import './Post.css';
 

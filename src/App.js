@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 // Page Imports
-import Videos from './Components/Videos';
-import Photos from './Components/Photos';
-import Main from './Components/Main';
-import Projects from './Components/Projects';
-import Blog from './Components/Blog';
+import Videos from './Components/Videos/Videos';
+import Photos from './Components/Photos/Photos';
+import Main from './Components/Main/Main';
+import Projects from './Components/Projects/Projects';
+import Blog from './Components/Blog/Blog';
 
 // Social Media Icons
 import { ReactComponent as Gmail } from './social_icons/gmail.svg';
@@ -16,10 +16,10 @@ import { ReactComponent as Linkedin } from './social_icons/linkedin.svg';
 import { ReactComponent as Youtube } from './social_icons/youtube.svg';
 
 // Constant Imports
-import Navigation from './Components/Navigation';
-import Footer from './Components/Footer';
+import Navigation from './Components/Navigation/Navigation';
+import Footer from './Components/Footer/Footer';
 import './App.css';
-import Post, { blogPostType, projectPostType } from './Components/Post';
+import Post, { blogPostType, projectPostType } from './Components/Post/Post';
 
 class App extends Component {
 

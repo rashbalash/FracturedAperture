@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { db } from "../Config/firebaseConfig";
+import { db } from "../../Config/firebaseConfig";
 import Gallery from 'react-photo-gallery';
 import Carousel, { Modal, ModalGateway } from 'react-images';
 import YouTubeVideoView from './YouTubeVideoView';
