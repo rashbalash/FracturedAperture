@@ -3,6 +3,7 @@ import './Main.css';
 import '../sectionImages/swAnimate.css';
 import { ReactComponent as Sw } from '../sectionImages/sw.svg';
 import { ReactComponent as FALogo } from '../Logo/FALogo.svg';
+import { ReactComponent as GitHub} from '../sectionImages/github.svg';
 
 class Main extends Component {
 
@@ -56,12 +57,20 @@ class Main extends Component {
                     </div>
                     <br />
                     <div className="sectionItem">
+                        <GitHub />
+                        <div className="itemInformation">
+                            <p className="itemTitle"><a className="projectLink" href="https://github.com/rashbalash/ResumeWebsiteTemplate" target="_blank" rel="noopener noreferrer">Resume Website Template</a></p>
+                            <p className="itemDetails">Built using ReactJS<br />An easy to configure, single page resume template</p>
+                        </div>
+                    </div>
+                    <br />
+                    <div className="sectionItem">
                         <FALogo className="projectImage"/>
                         <div className="itemInformation">
                             <p className="itemTitle">FracturedAperture</p>
                             <p className="itemDetails">Built using ReactJS<br />A website to share photos, videos, projects, and my thoughts</p>
                         </div>
-                    </div>
+                    </div>                    
                 <p className="sectionName">Contact Me</p>
 
 
