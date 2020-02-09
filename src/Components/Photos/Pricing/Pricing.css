@@ -1,0 +1,18 @@
+.PricingContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#Group {
+    margin: 10px 20px;
+    width: 300px;
+    max-width: 90%;
+}
+
+#Individual {
+    margin: 10px 20px;
+    width: 300px;
+    max-width: 90%;
+}

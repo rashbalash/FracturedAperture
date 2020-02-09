@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { db } from "../../Config/firebaseConfig";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
+import Pricing from './Pricing/Pricing';
 
 import './Photos.css';
 
@@ -10,7 +11,7 @@ class Photos extends Component {
     state = {
         photos: [],
         activePhotoIndex: null,
-        isLightboxOpen: false
+        isLightboxOpen: false,
     };
 
     componentDidMount = () => {
@@ -32,11 +33,13 @@ class Photos extends Component {
     }
 
     render() {
+
         return (
             <div id="gallery_container">
-                <br />
 
-                <Gallery photos={ this.state.photos } onClick={ this.toggleModal } />
+                <br />
+               
+                <Gallery id="galleryContainer" photos={ this.state.photos } onClick = { () => { this.toggleModal() } } />
 
                 <ModalGateway>
                     { this.state.isLightboxOpen ? (
@@ -49,6 +52,10 @@ class Photos extends Component {
                 </ModalGateway>
                 
                 <br />
+
+                <h1>Pricing</h1>
+                <Pricing />
+
             </div>
         )
     }

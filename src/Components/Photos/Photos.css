@@ -1,8 +1,20 @@
 div#gallery_container {
-    max-width: 80%;
+    max-width: 90%;
     margin: auto;
+    justify-content: center;
+
 }
 
 img.gallery_image {
     margin: 50px;
+}
+
+div.react-photo-gallery--gallery div {
+    justify-content: center;
+}
+
+div.react-photo-gallery--gallery div img {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
 }
