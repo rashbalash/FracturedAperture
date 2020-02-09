@@ -13,8 +13,10 @@ div.react-photo-gallery--gallery div {
     justify-content: center;
 }
 
-div.react-photo-gallery--gallery div img {
-    width: 400px;
-    max-width: 100%;
-    height: auto;
+@media only screen and (min-width: 600px) {
+    div.react-photo-gallery--gallery div img {
+        width: 400px;
+        max-width: 100%;
+        height: auto;
+    }
 }

@@ -8,7 +8,7 @@ function Pricing() {
         <div className="PricingContainer">
             <div id="Group">
                 <h3>Group Photos ($200)</h3>
-                <p>1 Hour Photo Session | 3 Locations</p>
+                <p>1 Hour Photo Session | 2 Locations</p>
                 <p>All Original and Edited Photos</p>
                 <p>Edited Photos within the next 24 Hours</p>
             </div>

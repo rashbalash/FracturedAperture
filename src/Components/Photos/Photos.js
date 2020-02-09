@@ -39,7 +39,7 @@ class Photos extends Component {
 
                 <br />
                
-                <Gallery id="galleryContainer" photos={ this.state.photos } onClick = { () => { this.toggleModal() } } />
+                <Gallery id="galleryContainer" photos={ this.state.photos } onClick = { this.toggleModal } />
 
                 <ModalGateway>
                     { this.state.isLightboxOpen ? (
