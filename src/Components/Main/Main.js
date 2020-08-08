@@ -35,7 +35,15 @@ class Main extends Component {
                         <img src="https://firebasestorage.googleapis.com/v0/b/fractured-aperture.appspot.com/o/Section_Icons%2Fey.png?alt=media&token=7324bd92-36ea-4970-81f4-14c29b834fd9" alt="Ernst & Young" className="itemImage" />
                         <div className="itemInformation">
                             <p className="itemTitle">Ernst & Young</p>
-                            <p className="itemDetails">IT Advisory Intern<br />June 2019 - August 2019</p>
+                            <p className="itemDetails">Technology Consultant Staff<br />July 2020 - Present</p>
+                        </div>
+                    </div>
+                    <br />
+                    <div className="sectionItem">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/fractured-aperture.appspot.com/o/Section_Icons%2Fey.png?alt=media&token=7324bd92-36ea-4970-81f4-14c29b834fd9" alt="Ernst & Young" className="itemImage" />
+                        <div className="itemInformation">
+                            <p className="itemTitle">Ernst & Young</p>
+                            <p className="itemDetails">Technology Consultant Intern<br />June 2019 - August 2019</p>
                         </div>
                     </div>
                     <br />
@@ -70,7 +78,8 @@ class Main extends Component {
                             <p className="itemTitle">FracturedAperture</p>
                             <p className="itemDetails">Built using ReactJS<br />A website to share photos, videos, projects, and my thoughts</p>
                         </div>
-                    </div>                    
+                    </div>     
+                <br />               
                 <p className="sectionName">Contact Me</p>
 
 

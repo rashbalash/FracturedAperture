@@ -1,0 +1,38 @@
+#modalContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 600px;
+    max-width: 95%;
+    margin: auto;
+}
+
+#modalButtonContainer {
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.modalButton {
+    background-color: #17519c;
+    border: none;
+    color: white;
+    padding: 2px 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+#GearContainer {
+    font-weight: bold;
+    width: 500px;
+}
+
+.itemName {
+    margin-left: 20px;
+}

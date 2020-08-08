@@ -3,16 +3,18 @@
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
+    font-weight: bold;
+    max-width: 130%;
 }
 
 #Group {
     margin: 10px 20px;
-    width: 300px;
-    max-width: 90%;
+    width: 500px;
+    text-align: center;
 }
 
 #Individual {
     margin: 10px 20px;
-    width: 300px;
-    max-width: 90%;
+    width: 500px;
+    text-align: center;
 }

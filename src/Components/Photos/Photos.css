@@ -20,3 +20,32 @@ div.react-photo-gallery--gallery div {
         height: auto;
     }
 }
+
+#modalButtonContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.modalButton {
+    font-size: 20px;
+    text-align: center;
+}
+
+#modalContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 600px;
+    max-width: 95%;
+    margin: auto;
+}
+
+#modalContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    max-width: 90%;
+    margin: auto;
+    align-content: center;
+}

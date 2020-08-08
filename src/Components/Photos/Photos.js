@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { db } from "../../Config/firebaseConfig";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import Pricing from './Pricing/Pricing';
+import Modals from './Modals/Modals';
 
 import './Photos.css';
 
@@ -12,11 +12,14 @@ class Photos extends Component {
         photos: [],
         activePhotoIndex: null,
         isLightboxOpen: false,
+        showPricingModal: false,
+        showPresetModal: false,
+        showGearModal: false,
     };
 
     componentDidMount = () => {
         this.getImageLinks();
-    }
+    };
 
     getImageLinks = () => {
         return db.collection("PhotoURLS").get().then((snapshot) => {
@@ -26,36 +29,41 @@ class Photos extends Component {
             });
             this.setState({photos});
         });
-    }
+    };
 
     toggleModal = (e, photoArg) => {
         this.setState(state => ({ isLightboxOpen: !this.state.isLightboxOpen, activePhotoIndex: photoArg ? photoArg.index : 0 }));
+    };
+
+    openPricingModal = (isOpen) => {
+        this.setState({
+            showPricingModal: isOpen
+        });
     }
 
     render() {
 
         return (
-            <div id="gallery_container">
-
+            <div>
                 <br />
-               
-                <Gallery id="galleryContainer" photos={ this.state.photos } onClick = { this.toggleModal } />
-
-                <ModalGateway>
-                    { this.state.isLightboxOpen ? (
-                        <Modal onClose={ this.toggleModal }>
-                            <Carousel 
-                                currentIndex={ this.state.activePhotoIndex } 
-                                views={ this.state.photos } />
-                        </Modal>
-                    ) : null }
-                </ModalGateway>
                 
-                <br />
+                <Modals />
+            
+                <div id="gallery_container">
+                    <Gallery id="galleryContainer" photos={ this.state.photos } onClick = { this.toggleModal } />
 
-                <h1>Pricing</h1>
-                <Pricing />
-
+                    <ModalGateway>
+                        { this.state.isLightboxOpen ? (
+                            <Modal onClose={ this.toggleModal }>
+                                <Carousel 
+                                    currentIndex={ this.state.activePhotoIndex } 
+                                    views={ this.state.photos } />
+                            </Modal>
+                        ) : null }
+                    </ModalGateway>
+                    
+                    <br />
+                </div>
             </div>
         )
     }
