@@ -1,3 +1,8 @@
+div#mainTitle {
+  max-width: 90%;
+  margin: auto;
+}
+
 p#title {
   text-align: center;
   margin-top: 20px;
@@ -9,17 +14,18 @@ p#title {
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  font-weight: bold;
 }
 
 @media all and (max-width: 415px) {
   p#title {
-    font-size: 40px;
+    font-size: 45px;
   }
 }
 
 @media all and (max-width: 320px) {
   p#title {
-    font-size: 36px;
+    font-size: 40px;
   }
 }
 
@@ -39,10 +45,10 @@ div.socialIconWrapper {
 
 a.socialIconA {
   margin: auto 5px;
-  -webkit-transition: .3s ease ;
-  -moz-transition: .3s ease;
-  -o-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 a.socialIconA:hover {
